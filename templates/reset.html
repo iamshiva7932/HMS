@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        fieldset {
+            width: 465px;
+            height: 400px;
+            background-color: white;
+            margin-top: 15px;
+            margin-left: 450px;
+            border-radius: 20px;
+            border: 0.5px solid black;
+            color: black;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+
+        body {
+            background-image: url(./static/15.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .c2 input {
+            width: 450px;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .btn {
+            background-color: crimson;
+            height: 40px;
+            width: 250px;
+            border-radius: 20px;
+            text-align: center;
+            border-color: red;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+        }
+
+        .a2 h2 {
+            color: goldenrod;
+            font-size: 55px;
+            height: 40px;
+            width: auto;
+            font-family: Gigi;
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .a2 {
+
+            margin-top: 1px;
+            padding: 0;
+            overflow: hidden;
+        }
+        .a3 input {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 15px;
+        }
+    </style>
+    <title>Reset password</title>
+</head>
+
+<body>
+    <div class="a3">
+        <a href="Home.html"><input type="button" value="X"></a>
+    </div><br>
+    <div class="a2">
+        <h2 style="margin-top:5px;">Hotel.com</h2>
+    </div>
+    <fieldset>
+        <h1>Reset your password here</h1>
+        <form>
+            <br>
+            <div class="c2">
+                <h4>We'll send email to reset your password</h4>
+                <label>
+                    <h3>Email Id</h3>
+                </label>
+                <input type="text" name="username">
+                <br>
+                <br>
+            </div>
+            <a href="Login.html">
+                <h1 style="text-align: center;"><button type="button" color="red" class="btn">Reset Password</button> </h1>
+            </a>
+        </form>
+    </fieldset>
+</body>
+
+</html>

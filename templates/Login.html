@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            text-decoration: none;
+        }
+
+        fieldset {
+            width: 465px;
+            height: 460px;
+            margin-top: 15px;
+            margin-left: 450px;
+            border-radius: 20px;
+            text-decoration: none;
+            border: 0.5px solid black;
+            color: black;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        body {
+            background-image: url(./static/15.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+
+        .c2 input {
+            width: 450px;
+            font-size: 15px;
+            background: transparent;
+            border: none;
+            margin-bottom: 18px;
+            border-bottom: 2px solid black;
+            outline: none;
+            padding: 10px 0;
+            color: black;
+        }
+
+        .c2 label {
+            color: black;
+            font-weight: bold;
+
+        }
+
+        .btn {
+            background-color: crimson;
+            height: 40px;
+            width: 250px;
+            border-radius: 20px;
+            text-align: center;
+            border-color: red;
+            font-size: 25px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: darkred;
+        }
+
+        .a2 h2 {
+            color: goldenrod;
+            font-size: 55px;
+            height: 40px;
+            width: auto;
+            font-family: Gigi;
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .a2 {
+
+            margin-top: 1px;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .a3 input {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 15px;
+        }
+
+        .p {
+            color: palevioletred;
+            text-align: center;
+
+        }
+    </style>
+    <title>Login page</title>
+</head>
+
+<body>
+    <div class="a3">
+        <a href="Home.html"><input type="button" value="X"></a>
+    </div><br>
+    <div class="a2">
+        <h2 style="margin-top:5px;">Hotel.com</h2>
+    </div>
+    <fieldset>
+        <h1 style="color:black; text-align: center;">Sign in</h1>
+        <form>
+            <br>
+            <div class="c2">
+                <label for="username" style="float:left;">
+                    <h3>Username</h3>
+                </label>
+                <h5 style="float:right;">Need an account? Sign up</h5>
+                <input type="text" name="username" id="uname">
+            </div>
+            <div class="c2">
+                <label for="userpassword">
+                    <h3>Password</h3>
+                </label>
+                <input type="password" name="Password" id="pwd">
+            </div>
+            <h1 style="text-align: center;"><button type="button" color="red" class="btn" onclick="func()">Sign In</button> </h1>
+            <div class="p">
+                <p id="p"></p>
+            </div>
+            <label for="forgetpassword">
+                <p style="color:black; text-align: center;"><a href="reset.html">Forgot password?</a></p>
+            </label>
+        </form>
+    </fieldset>
+    <script>
+        function func() {
+            var u = document.getElementById("uname").value;
+            var p = document.getElementById("pwd").value;
+            if (typeof u === undefined || p === "undefined") {
+                document.getElementById("p").innerHTML = ('Enter username and  password!');
+            }
+            else {
+                if ((u == 'shivaup7932@gmail.com' && p == '7932') || (u == 'SHIVA' && p == '7932')) {
+                    window.open('web.html', '_blank');
+                }
+                else {
+                    document.getElementById("p").innerHTML = ('Wrong username or password. Please try again!');
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

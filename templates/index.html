@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel.com</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script> -->
+    
+    
+</head>
+
+<body>
+    <script>
+        alert("Login succesfully");
+    </script>
+    <div class="a1">
+        <div class="a2">
+            <a href="index">
+                <h2>Hotel.com</h2>
+            </a>
+            <div class="a3">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href=Registration.html>REGISTRASTION</a></li>
+                    <li>ROOM BOOKING</li>
+                    <li><a href=Order.html>ORDER</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <fieldset class="fieldset" style="text-align: center;">
+        <h2 style="color:white; font-size: 30px;"><u>Registration</u></h2>
+        <hr >
+        <hr>
+        <br>
+        <form method="POST" action="/index">
+        <label class="lab" for="name">Name</label>
+        <br>
+        <input type="text" id="name" placeholder="" required name="fullname">
+        <br>
+        <label class="lab" for="age">Age</label>
+        <br>
+        <input type="number" id="age" placeholder="" name="age">
+        <br>
+        <label class="lab" for="phn">Phone No</label>
+        <br>
+        <input type="tel" id="phn" name="phn" placeholder="">
+        <br>
+        <label class="lab" for="city">City</label>
+        <br>
+        <input type="text" id="city" placeholder="" name="city">
+        <br>
+        <br>
+        {% comment %} <label class="lab" for="fname">Gender: </label>
+        <input type="radio" name="gender" values="Male" checked id="male">
+        <label for="Male" name="gender" class="lab">Male</label>
+        <input type="radio" name="gender" values="Female" id="female">
+        <label for="Female" name="gender" class="lab">Female</label> {% endcomment %}
+        <br>
+        <br>
+        <h1 style="text-align: center;"><button type="button" class="btn" >Register</button> </h1>
+        </form>
+    </fieldset>
+    {% comment %} <script>
+        function func(){
+            var name1=document.getElementById("name").value;
+            var age1=document.getElementById("age").value;
+            var phn1=document.getElementById("phn").value;
+            var city1=document.getElementById("city").value;
+
+        }
+        
+    </script> {% endcomment %}
+    <!-- <py-script>
+        from js import name1,age1,phn1,city1
+        
+        print("Values inserted succesfully {name1}")
+
+    </py-script> -->
+    <footer style="margin-top: 200px;">
+        <h1 style="margin-top: 100px; letter-spacing: 4px;">Let's connect!</h1>
+        <p style="margin-top: 18px; color: darkcyan;">
+            Want to know what we're up to? Sign up for the exclusive offers and join our tribe.
+        </p>
+        <div class="subscribe_button">
+            <input type="email" placeholder=" type your e-mail here..." name="search"><button
+                type="submit">Join</button>
+            <div class="link">
+                <a href="https://www.google.com/iamshiva7932" target="_blank" class="fa fa-google"></a>
+                <a href="https://www.facebook.com/iamshiva7932" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/iamshiva7932" target="_blank" class="fa fa-instagram"></a>
+                <a href="https://twitter.com/IamShiva___" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.linkedin.com/in/shiva-299a81235" target="_blank" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div>
+            <p style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> Hotel.com &copy; All rights reserved
+                2023 | Designed by <span style="color:red; ">SERI</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

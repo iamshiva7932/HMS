@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.a1 {
+    position: relative;
+}
+
+.a2 {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    width: auto;
+    height: 400px;
+    text-decoration: none;
+}
+
+.a2 h2 {
+    color: goldenrod;
+    font-size: 50px;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    margin-top: 2px;
+    margin-left: 40px;
+    float: left;
+    font-family: Gigi;
+}
+
+body {
+    margin-top: 0px;
+    background-position: 550px auto;
+    background-color: white;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: arial;
+    text-decoration: none;
+}
+
+.a3 ul li {
+    margin: 1px;
+    padding: 17px;
+    margin-top: 5px;
+    display: inline-block;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.a3 ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.a3 ul li:hover {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+
+.a3 ul li a:hover {
+    color: goldenrod;
+}
+.dropdown-content ul li {
+    color: white;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.a3 ul li:hover .dropdown-content {
+    display: block;
+}
+
+.btn {
+
+    background-color: sandybrown;
+    color: red;
+}
+.searchbox {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 65.2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: Center;
+}
+
+.searchbox input {
+    border-radius: 50px 0px 0px 50px;
+    width: 50%;
+    height: 35px;
+    padding: 8px;
+    border: 3px solid goldenrod;
+    font-size: 17px;
+
+}
+
+.searchbox button {
+
+    border-radius: 0px 50px 50px 0px;
+    border: 3px solid goldenrod;
+    width: 100px;
+    height: 57px;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    background-color: goldenrod;
+
+
+}
+
+.searchbox button:hover {
+    background-color: darkgoldenrod;
+    border-color: darkgoldenrod;
+}
+
+.a1 h1 {
+    margin-top: -210px;
+    margin-left: 20px;
+    font-size: 65.2px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    text-align: Center;
+
+}
+
+.a1 h3 {
+    letter-spacing: 9pt;
+    color: white;
+    margin-left: 23px;
+    text-align: center;
+}
+
+footer {
+    margin-top:35px;
+    background-color: #000000;
+    /* background-color: #1E2952; */
+    color: white;
+    padding: 3px;
+    height: 400px;
+    text-align: center;
+    font-family: Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.subscribe_button{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;
+}
+.subscribe_button input{
+    font-size: 20px;
+    border-radius: 30px;
+    border: 0.1px silid white;
+    padding: 15px;
+    width: 45%;
+    
+}
+.subscribe_button button{
+    margin-left: -125px;
+    border: 0.1px solid white;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    width: 120px;
+}
+.picture img {
+    width: 300px;
+    display: inline-block;
+}
+
+.picture {
+    width: 300px;
+    /* background-color:aquamarine; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    display: inline-block;
+    margin: 10px;
+
+
+}
+
+.picture:hover {
+    border: 0.1px solid black;
+    cursor: pointer;
+}
+
+.p {
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.photos {
+    margin-top: 80px;
+}
+.link{
+    margin-top: 25px;
+    float: center;
+      
+  }
+  .fa {
+    padding: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: white;
+    
+}
