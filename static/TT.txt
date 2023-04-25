@@ -1,1 +1,2 @@
 This is static directory.
+This is second line.
