@@ -18,3 +18,5 @@ def contact(request):
     return render(request ,'contact.html')
 def signin(request):
     return HttpResponse("This is signin page.!!!!!!!!!!!!!!!!!!!!!!!")
+def book_now(request):
+    return render(request,'book_now.html')
