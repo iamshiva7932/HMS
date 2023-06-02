@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
+    <link rel="Website Icon" type="png" href="./static/log.png">
     <title>Book Now</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -221,29 +222,11 @@
             <button type="button" style="margin-left: 25%; width:51% ; background-color:mistyrose; color:#000000"
                 onclick="func1()">Add Persons</button>
             <br>
-            <button type="Submit" style="font-size: medium;" onclick="func1()">Submit</button>
+            <button type="Submit" style="font-size: medium;" >Submit</button>
         </form>
     </div>
-    <script src="https://smtpjs.com/v3/smtp.js">
-        // function func1() {
-        //     let name = document.getElementById("name").value;
-        //     let from_date = document.getElementById("from_date").value;
-        //     let to_date = document.getElementById("to_date").value;
-        //     let phone = document.getElementById("phone").value;
-        //     let email = document.getElementById("email").value;
-        //     let finalmessage = `Name : ${name}<br>From_Date:${from_date}<br> To_Date:${to_date}<br>Phone:${phone}<br>  Email : ${email} <br>`;
-        //     Email.send({
-        //         SecureToken: "addyoursecuretokenhere",
-        //         To: 'them@website.com',
-        //         From: "you@isp.com",
-        //         Subject: "Mail from website",
-        //         Body: finalmessage
-        //     }).then(
-        //         message => alert(message)
-        //     );
-        // }
-    </script>
-    <script>
+    
+    {% comment %} <script>
         function func1(){
 
             Email.send({
@@ -257,9 +240,8 @@
             }).then(
                 message => alert(message)
                 );
-            
-                
-    </script>
+        }     
+    </script>  {% endcomment %}
     <footer>
         <h1 style="margin-top: 80px; letter-spacing: 3px;">Our Customers <span style="color:blue;">❤</span> Us</h1>
 

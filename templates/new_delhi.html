@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
-    <title>Contact Us</title>
+    <link rel="Website Icon" type="png" href="./static/log.png">
+    <title>New Delhi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             margin-top: 0px;
             background-position: 550px auto;
-            background-color: #F5F5F5;
+            /* background-color: #F5F5F5; */
+            background-image: url("static/book.jpg");
             opacity: 1;
             background-repeat: no-repeat;
             background-size: 100%;
@@ -83,19 +85,19 @@
         }
 
         footer {
-            margin-top: 35px;
+            margin-top: 20px;
             background-color: #000000;
             /* background-color: #1E2952; */
             color: white;
             padding: 3px;
-            height: 300px;
+            height: 250px;
             text-align: center;
-            font-family: Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
         }
 
         .link {
-            margin-top: 80px;
+            margin-top: 10px;
             float: center;
 
         }
@@ -112,57 +114,12 @@
         }
 
         .image img {
-            height: 400px;
+            height: auto;
             width: 100%;
 
         }
-
-        .text1 h1 {
-            position: relative;
-            margin-left: 35px;
-            margin-top: -90px;
-            font-size: 22px;
-            color: rgb(85, 16, 76);
-        }
-
-        .text2 h2 {
-            color: rgb(0, 0, 0, );
-            position: relative;
-            text-align: center;
-            margin-top: 80px;
-            font-size: 30px;
-            margin-bottom: 20px;
-            font-family: 'Times New Roman', Times, serif;
-
-        }
-
-        .contact_form label {
-            margin-left: 25%;
-            margin-top: 10px;
-        }
-
-        .contact_form input {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            margin-left: 25%;
-            width: 50%;
-            font-size: 15px;
-            padding: 2px;
-            padding-left: 4px;
-        }
-
-        .contact_form button {
-            color: white;
-            background-color: rgb(78, 128, 185);
-            margin-left: 49%;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding: 7px;
-            border-radius: 4px;
-        }
     </style>
 </head>
-
 <body>
 
     <div class="a1">
@@ -181,35 +138,9 @@
             </div>
         </div>
     </div>
-
-    <div class="image">
-        <img src="static/contact7.jpg">
+    <div class="details">
+        
     </div>
-    <div class="text1">
-        <h1>We Would <span style="color:red;">❤</span> To Hear From You.</h1>
-    </div>
-    <div class="text2">
-        <h2>Contact Us</h2>
-    </div>
-    <div class="contact_form">
-        <form method="post" action="/contact">
-            {% csrf_token %}
-            <label for="name">Name</label>
-            <br>
-            <input type="text" id="name" placeholder="Enter your name" required name="name">
-            <br>
-            <label for="phn">Phone No</label>
-            <br>
-            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
-            <br>
-            <label for="email">Email</label>
-            <br>
-            <input type="email" id="email" name="email" placeholder="Enter your email address">
-            <br>
-            <button type="Submit">Submit</button>
-        </form>
-    </div>
-
     <footer>
         <h1 style="margin-top: 80px; letter-spacing: 3px;">Our Customers <span style="color:blue;">❤</span> Us</h1>
 

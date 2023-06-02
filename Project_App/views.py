@@ -20,3 +20,7 @@ def signin(request):
     return HttpResponse("This is signin page.!!!!!!!!!!!!!!!!!!!!!!!")
 def book_now(request):
     return render(request,'book_now.html')
+def new_delhi(request):
+    return render(request,'new_delhi.html')
+def about_us(request):
+    return render(request,'about_us.html')
